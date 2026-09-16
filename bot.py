@@ -35,12 +35,16 @@ PHONE = "+998879655050"
 INSTAGRAM = "@zarshedjamshedovich_"
 TELEGRAM = "@ZARSHEDJAMSHEDOVICH_567"
 
-BASE_DIR = r"C:\Users\user\ZBOT"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-COLOR_IMAGE = r"C:\Users\user\Pictures\FOTO PRATAKOL\rang.jpg"
-INTRAORAL_IMAGE = r"C:\Users\user\Pictures\FOTO PRATAKOL\introoral.jpg"
-PATIENT_PHOTO_IMAGE = (
-    r"C:\Users\user\Pictures\FOTO PRATAKOL\patsent foto paratakol.jpg"
+COLOR_IMAGE = os.path.join(BASE_DIR, "rang.jpg")
+
+INTRAORAL_IMAGE = os.path.join(BASE_DIR, "introoral.jpg")
+
+PATIENT_PHOTO_IMAGE = os.path.join(
+    BASE_DIR,
+    "patsent foto paratakol.jpg"
+)
 )
 
 DB_FILE = os.path.join(BASE_DIR, "zbot.db")
